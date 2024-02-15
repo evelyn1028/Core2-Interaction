@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Punctuation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <a id="main_title" href="./test.html"></a>
+  </div>
+
+  <script>
+    const rainbowColors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF'];
+    const label = document.getElementById('main_title');
+    const originalText = 'On Punctuation';
+    
+    function changeColor() {
+      const spannedText = originalText.split('').map(char => 
+      {
+        if (char === ' ') {
+          return '<span>&nbsp;</span>';
+        } else {
+          return `<span>${char}</span>`;
+        }
+      }).join('');
+      label.innerHTML = spannedText;
+      textColorChange();
+    }
+
+    function textColorChange () {
+      const spans = label.getElementsByTagName('span');
+      Array.from(spans).forEach(span => {
+        const randomColor = rainbowColors[Math.floor(Math.random() * rainbowColors.length)];
+        span.style.color = randomColor;
+      });
+
+      setTimeout(textColorChange, 500);
+    }
+
+    window.onload = changeColor;
+  </script>
+</body>
+</html>

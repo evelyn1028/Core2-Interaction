@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main_title {
+    color: #F47D7D;
+    font-size: 80px;
+    padding: 10px;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#main_title:hover {
+    font-size: 95px;
+    transition: font-size 0.5s ease-in-out;
+}
+
+#main_title span {
+    display: inline-block;
+    transition: color 0.5s;
+}
