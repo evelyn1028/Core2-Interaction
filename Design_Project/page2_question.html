@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <title>Punctuation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000000;
+      overflow: hidden;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+
+    .red-word {
+      color: #eb4d3b;
+    }
+
+    .falling-image {
+      position: absolute;
+      animation: fallAnimation linear infinite;
+    }
+
+    @keyframes fallAnimation {
+      0% {
+        transform: translateY(-100vh);
+      }
+
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+  </style>
+  <script>
+    const questionCnt = 6;
+    document.addEventListener("DOMContentLoaded", function () {
+      const body = document.querySelector("body");
+
+      function createFallingImage(src) {
+        const image = new Image();
+        image.src = src;
+        image.className = "falling-image";
+
+        const startPosition = Math.random() * window.innerWidth;
+        const animationDuration = Math.random() * 5 + 5;
+
+        image.style.left = startPosition + "px";
+        image.style.animationDuration = animationDuration + "s";
+        image.style.width = "100px";
+        image.style.height = "100px";
+        image.addEventListener("animationend", function () {
+          body.removeChild(image);
+        });
+
+        body.appendChild(image);
+      }
+
+      for (let index = 0; index < questionCnt; index++) {
+        createFallingImage("./img/circle_question.svg");
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div class="home-div">
+    <a href="./page1_punctuation.html">
+      <img class="home-img" src="./img/home.svg">
+    </a>
+  </div>
+  <div class="next-div">
+    <a href="./page3_exclamationMark.html">
+      <img class="next-img" src="./img/next.svg">
+    </a>
+  </div>
+  <div id="main" style="z-index: 1;">
+    <div>
+      <p>
+        There are some punctuations that are interestingand there are some punctuations that are not. Let us begin
+        with<br>
+        thepunctuations that are not. Of these the one but the first and the most thecompletely most uninteresting is
+        the<br>
+        question mark. The <span class="red-word">question mark</span> is alright when it is all alone when it is used as a brand on cattle or when
+        itcould be<br>
+        used in decoration but connected with writing it is completelyentirely completely uninteresting.
+      </p>
+    </div>
+    <div class="space-150"></div>
+    <div>
+      <p>
+        It is evident that is you ask a question you aska question but anybody who can read at all knows when a question
+        is a<br>
+        questionas it is written in writing. Therefore I ask you therefore wherefore should oneuse the question mark.
+        Beside it<br>
+        does not in its form go with ordinary printingand so it pleases neither the eye nor the ear and it is therefore
+        like a<br>
+        noun,just an unnecessary name of something. A question is a question, anybody canknow that a question is a
+        question<br>
+        and so why add to it the question mark whenit is already there when the question is already there in the
+        writing.Therefore<br>
+        I never could bring myself to use a question mark, I always found itpositively revolting, and now very few do
+        use it.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

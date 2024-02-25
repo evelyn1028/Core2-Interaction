@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <title>Punctuation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      background-color: #000000;
+    }
+    
+    p {
+      color: #ffffff;
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+   
+    .container {
+      margin: 70px 0;
+    }
+    
+    .yellowGreen-word {
+      color: #e6e86a;
+    }
+
+    .green-word {
+      color: #19a81e;
+    }
+
+    .ani-div {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      flex-direction: row;
+      height: 180px;
+    }
+
+    .rolling-circle {
+      transform: translate(-50%, 0);
+      animation: roll-ani 8s linear infinite;
+      height: 150px;
+    }
+
+    .image-container {
+      position: relative;
+      width: 50px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      transition: opacity 0.3s ease-in-out, transform 1s ease-in-out;
+    }
+
+    .overlay img {
+      height: auto
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1;
+      transform: translateY(100px); 
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="home-div">
+      <a href="./page1_punctuation.html">
+        <img class="home-img" src="./img/home.svg">
+      </a>
+    </div>
+    <div class="next-div">
+      <a href="./page7_bigComma.html">
+        <img class="next-img" src="./img/next.svg">
+      </a>
+    </div>
+    <div id="main" style="z-index: 1;">
+      <div>
+        <p style="text-align: center;">
+          what an entirely different thing a period is from a comma, a colon or a semi-colon
+        </p>
+      </div>
+      <div>
+        <p>
+          There are two different way of thinking about <span class="yellowGreen-word">colons</span> and <span class="green-word">semicolons</span> you can think of them as commas and as such<br>
+          they are purely servile or you can think of them as periods and then using them can make you feel adventurous I can<br>
+          see that one might feel about them as periods but I myself never have, I began unfortunately to feel them as a comma<br>
+          and commas are servile they have no life of their own they are dependent upon use and convenience and they are put<br>
+          there just for practical purposes. Semi-colons and colons had for me from the first completely this character the character<br>
+          that a comma has and not the character that a period has and therefore and definitely I have never used them. But now<br>
+          dimly and definitely I do see that they might well possibly they might have in them something of the character of the<br>
+          period and so it might have been an adventure to use them. I really do not think so. <span class="yellowGreen-word">I think however lively they are or</span><br>
+          <span class="yellowGreen-word">disguised they are they are definitely more comma than period and so really I cannot regret not having used them.</span>
+        </p>
+      </div>
+      <div class="ani-div">
+        <div class="image-container">
+          <img src="./img/circle_yellowGreen.svg">
+          <div class="overlay">
+            <img src="./img/circle_yellowGreen.svg">
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./img/circle_green.svg">
+          <div class="overlay">
+            <img src="./img/comma_green.svg">
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./img/circle_yellowGreen.svg">
+          <div class="overlay">
+            <img src="./img/circle_yellowGreen.svg">
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./img/circle_green.svg">
+          <div class="overlay">
+            <img src="./img/comma_green.svg">
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./img/circle_yellowGreen.svg">
+          <div class="overlay">
+            <img src="./img/circle_yellowGreen.svg">
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./img/circle_green.svg">
+          <div class="overlay">
+            <img src="./img/comma_green.svg">
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./img/circle_yellowGreen.svg">
+          <div class="overlay">
+            <img src="./img/circle_yellowGreen.svg">
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./img/circle_green.svg">
+          <div class="overlay">
+            <img src="./img/comma_green.svg">
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>
+          They are more <span class="green-word">powerful</span> more <span class="green-word">imposing</span> more pretentious than a comma but they are a comma all the same. They reall<br>
+          have within them deeply within them fundamentally within them the comma nature. And now what does a comma do and<br>
+          what has it to do and why do I feel as I do about them.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

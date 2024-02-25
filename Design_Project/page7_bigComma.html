@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <title>Punctuation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      background-color: #000000;
+      cursor: none;
+    }
+    
+    p {
+      color: #ffffff;
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+   
+    .container {
+      margin: 70px 0;
+    }
+    
+    .red-word {
+      color: #f90000;
+    }
+
+    #main {
+      transition: all 0.3 ease;
+    }
+
+    .cursor {
+      pointer-events: none;
+      position: fixed;
+      padding: 1em;
+      background-image: url('./img/big_red_comma.svg');
+      background-repeat: no-repeat;
+      mix-blend-mode: difference;
+      background-size: contain;
+      transition: transform 0.3s ease;
+      width: auto;
+      height: auto;
+    }
+
+    #main:hover .cursor {
+      background-image: url('./img/big_red_comma.svg');
+      transform: translate(-50%, -50%) scale(8);
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const link = document.querySelectorAll('container > #main');
+      const cursor = document.querySelector('.cursor');
+
+      const animateit = function (i) {
+            const span = this.querySelector('text-1');
+            const { offsetX: x, offsetY: y } = i,
+            { offsetWidth: width, offsetHeight: height } = this,
+
+            move = 25,
+            xMove = x / width * (move * 2) - move,
+            yMove = y / height * (move * 2) - move;
+
+            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+            if (i.type === 'mouseleave') span.style.transform = '';
+      };
+
+      const editCursor = i => {
+            const { clientX: x, clientY: y } = i;
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+      };
+
+      link.forEach(b => b.addEventListener('mousemove', animateit));
+      link.forEach(b => b.addEventListener('mouseleave', animateit));
+      window.addEventListener('mousemove', editCursor);
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="home-div">
+      <a href="./page1_punctuation.html" style="cursor: none;">
+        <img class="home-img" src="./img/home.svg">
+      </a>
+    </div>
+    <div class="next-div">
+      <a href="./page1_punctuation.html" style="cursor: none;">
+        <img class="next-img"  src="./img/next.svg">
+      </a>
+    </div>
+    <div id="main" style="z-index: 1;">
+      <div>
+        <p style="text-align: center;">
+          What does a <span class="red-word">comma</span> do.
+        </p>
+      </div>
+      <div>
+        <p>
+          I have refused them so often and left the out so much and did without them so continually that I have come finally to be<br>
+          indifferent to them. I do not now care whether you put them in or not but for a long time Ifelt very definitely about them<br>
+          and would have nothing to do with them.
+        </p>
+      </div>
+      <div>
+        <p>
+          As I say commas are servile and they have no life of their own, and their use is not a use, it is a way of replacing one’s own<br>
+          rest and I do decidedly like to like my own interest my own interest in what I am doing.
+        </p>
+      </div>
+      <div>
+        <p>
+          Complications make eventually for simplicity and therefore I have always liked dependent adverbial clauses. I have like<br>
+          dependent adverbial clauses because of their variety of dependence and independence. You can see how loving the<br>
+          intensity of complication of these things that commas would be degrading. Why if you want the pleasure of concentrating<br>
+          on the final simplicity of excessive complication would you want any artificial aid to bring about that simplicity. Do you see<br>
+          now why I feel about that simplicity. Do you see now why I feel about the comma as I did and as I do. Think about anything<br>
+          you really like to do and you will see what I mean.
+        </p>
+      </div>
+      <div>
+        <p>
+          When it gets really difficult you want to disentangle rather than to cut the knot, at least of anybody feels who is working<br>
+          with any thread, so anybody feels who is working with any tool so anybody feels who is writing any sentence or reading it<br>
+          after it has been written. And what does a comma do, a comma does nothing but make easy a thing that if you like it enough<br>
+          is easy enough without the comma. A long complicated sentence should force itself upon you, make you know yourself<br>
+          knowing it and the comma, well at the most a comma is a poor period that lets you stop and take a breath but if you want<br>
+          to take a breath you ought to know yourself that you want to take a breath. It is not like stopping altogether has something<br>
+          to do with going on, but <span class="red-word">taking a breath</span> well you are always taking a breath and why emphasize one breath rather than<br>
+          another breath. Anyway that is the way I felt about it and I felt that about it very very strongly. And so I almost never used a<br>
+          comma. The longer, the more complicated the sentence the greater the number of the same kinds of words I had following<br>
+          one after another, the more the very more I had of them the more I felt the passionate need of their taking care of themselves<br>
+          by themselves and not helping them, and thereby enfeebling them by putting in a comma.
+        </p>
+      </div>
+      <div>
+        <p>
+          So that is the way I felt about punctuation in prose, in poetry it is a little different but more so and later I will go into that.<br>
+          ut that is the way I felt about punctuation in prose.
+        </p>
+      </div>
+      <div class="cursor"></div>
+    </div>
+  </div>
+</body>
+
+</html>

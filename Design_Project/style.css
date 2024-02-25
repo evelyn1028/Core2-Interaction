@@ -1,0 +1,60 @@
+body {
+    font-family: "AR One Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main_title {
+    color: #F47D7D;
+    font-size: 80px;
+    padding: 10px;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#main_title:hover {
+    font-size: 95px;
+    transition: font-size 0.5s ease-in-out;
+}
+
+#main_title span {
+    display: inline-block;
+    transition: color 0.5s;
+}
+
+.space-80 {
+    margin-top: 80px;
+}
+
+.space-100 {
+    margin-top: 100px;
+}
+
+.space-150 {
+    margin-top: 150px;
+}
+
+.home-div {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+}
+
+.next-div {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+.home-img {
+    width: 60px;
+    height: 60px;
+}
+
+.next-img {
+    width: 50px;
+    height: 50px;
+}

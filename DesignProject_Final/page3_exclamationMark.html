@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <title>Punctuation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000000;
+      overflow: hidden;
+    }
+
+    .blue-word {
+      color: #5fa4d3;
+    }
+
+    .animated-image{
+      position: fixed;
+      animation: growerMovement 5s infinite;
+    }
+
+    @keyframes growerMovement {
+      50% {
+        transform: scaleX(1.8) scaleY(1.6);
+      }
+      100% {
+        transform: scaleX(1) scaleY(1);
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const body = document.querySelector("body");
+
+      function createAnimatedImage(src, left, top) {
+        const image = new Image();
+        image.src = src;
+        image.className = "animated-image";
+
+        image.style.left = left;
+        image.style.top = top;
+        image.style.width = "200px";
+        image.style.height = "200px";
+        body.appendChild(image);
+      }
+
+      createAnimatedImage("./img/blue_shape.svg", "100px", "100px");
+      createAnimatedImage("./img/blue_shape.svg", "300px", "50%");
+      createAnimatedImage("./img/blue_shape.svg", "80%", "20%");
+      createAnimatedImage("./img/blue_shape.svg", "60%", "70%");
+      createAnimatedImage("./img/blue_shape.svg", "40%", "20%");
+
+    });
+  </script>
+</head>
+
+<body>
+  <div class="home-div">
+    <a href="./page1_punctuation.html">
+      <img class="home-img" src="./img/home.svg">
+    </a>
+  </div>
+  <div class="next-div">
+    <a href="./page4_circleComma.html">
+      <img class="next-img" src="./img/next.svg">
+    </a>
+  </div>
+  <div id="main" style="z-index: 1;">
+    <div>
+      <p>
+        <span class="blue-word">Exclamation marks</span> have the same difficulty and alsoquotation marks, they are <span class="blue-word">unnecessary</span>, they are <span class="blue-word">ugly</span>, they spoil the <br>
+        line ofthe writing or the printing and anyway what is the use, if you do not know thata question is a question what is the<br>
+        use of its being a question. The samething is true of a quotation. When I first began writing I found it simplyimpossible to<br>
+        use question marks and quotation marks and exclamation points andnow anybody sees it that way. Perhaps some day<br>
+        they will see it some other waybut not at any rate anybody can and does see it that way.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <title>Punctuation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000000;
+      overflow: hidden;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+
+    .pink-word {
+      color: #f041a9;
+    }
+
+    .rolling-circle {
+      transform: translate(-50%, 0);
+      animation: roll-ani 6s linear infinite;
+    }
+
+    #circle-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      animation: rotate-ani 1s linear infinite;
+      transform-origin: 50% 50%;
+    }
+
+    @keyframes roll-ani {
+      0% {
+        transform: translate(-50%, 0);
+      }
+      100% {
+        transform: translate(100vw, 0);
+      }
+    }
+
+    @keyframes rotate-ani {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+  <div class="home-div">
+    <a href="./page1_punctuation.html">
+      <img class="home-img" src="./img/home.svg">
+    </a>
+  </div>
+  <div class="next-div">
+    <a href="./page5_bounceBall.html">
+      <img class="next-img" src="./img/next.svg">
+    </a>
+  </div>
+  <div id="main" style="z-index: 1;">
+    <div>
+      <p>
+        So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not<br>
+        have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be<br>
+        interesting. They might if one felt that way about them.
+      </p>
+    </div>
+    <div class="rolling-circle">
+      <img id="circle-img" src="./img/circle_comma.svg">
+    </div>
+    <div>
+      <p>
+        One other little punctuation mark one can have feelings about and that is the <span class="pink-word">apostrophe</span> for possession. Well feel as you<br>
+        like about that, I can see and I do see that for many that for some the possessive case apostrophe has a <span class="pink-word">gentle tender</span><br>
+        <span class="pink-word">insinuation that makes it very difficult to definitely decide to do without it.</span> One does do without it, I do, I mostly always<br>
+        do, but I cannot deny that from time to time I feel myself having regrets and from time to time I put it in to make the<br>
+        possessive case. I absolutely do not like it and leaving it out I feel no regret, there it is unnecessary and not ornamental<br>
+        but inside a word and its s well perhaps, perhaps it does appeal by its weakness to your weakness. At least at any rate<br>
+        from time to time I do find myself letting it alone if it has come in and sometimes it has come in. I cannot positively deny<br>
+        but that I do from time to time let it come in.
+      </p>
+    </div>
+    <div class="space-80"></div>
+    <div>
+      <p>
+        So now to come to the real question of punctuation, periods, commas,colons, semi-colons and capitals and small <br>
+        letters.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
