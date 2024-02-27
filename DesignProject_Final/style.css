@@ -9,7 +9,7 @@ a {
 
 p {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 
@@ -69,7 +69,7 @@ p {
 
     /* 화면 너비가 600px 이하일 때의 스타일 */
     p {
-        font-size: 10px;
+        font-size: 9px;
         letter-spacing: 1px;
     }
 }
@@ -78,7 +78,7 @@ p {
 
     /* 화면 너비가 601px에서 1200px 사이일 때의 스타일 */
     p {
-        font-size: 15px;
+        font-size: 13px;
         letter-spacing: 1.5px;
     }
 }
@@ -87,7 +87,7 @@ p {
 
     /* 화면 너비가 1201px 이상일 때의 스타일 */
     p {
-        font-size: 22px;
+        font-size: 20px;
         letter-spacing: 2px;
     }
 }
