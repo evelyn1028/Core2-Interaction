@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #55BDCE;
+    background: -webkit-radial-gradient(top left, #EF7AAF, #ACD1FB);
+    background: -moz-radial-gradient(top left, #EF7AAF, #ACD1FB);
+    background: radial-gradient(to bottom right, #EF7AAF, #ACD1FB);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    min-height: 80vh;
+    width: 25rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 0rem 2rem;
+    transform-style: preserve-3d;
+}
+
+.jellycat {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.jellycat img {
+    width: 19rem;
+    z-index: 2;
+    transition: all 0.75 ease-out;
+    transform: scale(0.7);
+}
+
+.circle {
+    width: 13rem;
+    height: 13rem;
+    background: linear-gradient(to right,
+            rgba(146, 210, 220, 1.000),
+            rgba(239, 125, 181, 1.000));
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+
+}
+
+.info h1 {
+    font-size: 1.7rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1rem;
+    padding: 2rem 0rem;
+    color: #555555;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    padding: 0.4rem 1.8rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75 ease-out;
+}
+
+button.active {
+    color: white;
+    background: #585858;
+}
+
+.fix-move {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-div, .next-div {
+    width: 98px;
+    height: 98px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.home-div .home-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    background-color: rgba(231, 172, 203, 1);
+    width: 98px;
+    height: 98px;
+}
+
+.next-div .next-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(187, 209, 226, 1);
+    width: 100px;
+    height: 40px;
+}
+
+.home-div .home-span {
+    color: rgb(241, 215, 247, 1);
+    width: 70px;
+    height: 30px;
+    font-family: Inter;
+    font-size: 25px;
+    text-align: center;
+}
+
+.next-div .next-span {
+    color: rgba(134, 184, 232, 1);
+    width: 56px;
+    height: 30px;
+    font-family: Inter;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media screen and (min-width: 740px) {
+    .card {
+        width: 35rem;
+        padding: 0rem 5rem;
+    }
+
+    .sneaker img {
+        width: 20rem;
+    }
+
+    .circle {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .info h1 {
+        font-size: 3rem;
+    }
+
+    .info h3 {
+        font-size: 1.3rem;
+    }
+}
