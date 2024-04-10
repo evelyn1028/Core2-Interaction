@@ -141,7 +141,7 @@ h1+p {
 
   &.book4 {
     right: 0.8rem;
-    bottom: 3.3rem;
+    bottom: 3.1rem;
     color: #1b5d0a;
     background-color: #a2d9a8;
   }
@@ -182,7 +182,7 @@ h1+p {
 
   &.book9 {
     right: 0.8rem;
-    bottom: 3.3rem;
+    bottom: 3.1rem;
     color: #1b5d0a;
     background-color: #a2d9a8;
   }
@@ -192,6 +192,34 @@ h1+p {
     height: 2.8rem;
     right: 2rem;
     bottom: 0.2rem;
+    color: #1b5d0a;
+    background-color: #c7eec3;
+  }
+
+  &.book11 {
+    right: 0.8rem;
+    bottom: 9.1rem;
+    color: #1b5d0a;
+    background-color: #a2d9a8;
+  }
+
+  &.book12 {
+    right: 2rem;
+    bottom: 6.1rem;
+    color: #1b5d0a;
+    background-color: #c7eec3;
+  }
+ 
+  &.book13 {
+    right: 0.8rem;
+    bottom: 9.0rem;
+    color: #1b5d0a;
+    background-color: #a2d9a8;
+  }
+
+  &.book14 {
+    right: 2rem;
+    bottom: 6.1rem;
     color: #1b5d0a;
     background-color: #c7eec3;
   }

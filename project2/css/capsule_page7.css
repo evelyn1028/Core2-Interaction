@@ -1,6 +1,8 @@
 body {
-	background-color: rgb(233, 243, 246);
 	overflow: hidden;
+    background-image: url(../img/perfume_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
