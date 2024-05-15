@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
 body {
-	background-color: rgba(240, 255, 239, 1);
+	background-color: rgba(251, 240, 255, 1);
 	overflow: hidden;
+	font-family: "Jersey 20", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 a {
@@ -17,8 +22,8 @@ a {
 	color: rgba(196, 241, 193, 1);
 	position: absolute;
 	right: -1.3rem;
-	bottom: 12.7rem;
-	font-family: Inter;
+	bottom: 11.3rem;
+	/*font-family: Inter;*/
 	text-align: left;
 	font-size: 11rem;
 	letter-spacing: 1.2rem;
@@ -27,9 +32,9 @@ a {
 .text-2 {
 	color: rgba(196, 241, 193, 1);
 	position: absolute;
-	right: -1.3rem;
-	bottom: 5.3rem;
-	font-family: Inter;
+	right: -1.2rem;
+	bottom: 4.8rem;
+	/*font-family: Inter;*/
 	text-align: left;
 	font-size: 11rem;
 	letter-spacing: 1.2rem;
@@ -38,9 +43,9 @@ a {
 .text-3 {
 	color: rgba(196, 241, 193, 1);
 	position: absolute;
-	right: -1.3rem;
-	bottom: -2rem;
-	font-family: Inter;
+	right: -1.2rem;
+	bottom: -1.7rem;
+	/*font-family: Inter;*/
 	text-align: left;
 	font-size: 11rem;
 	letter-spacing: 1.2rem;
@@ -63,14 +68,14 @@ a {
 .img3 {
 	position: absolute;
 	left: 0%;
-    bottom: 15%;
+    bottom: 1%;
 	opacity: 0.2;
 }
 
 .img4 {
 	position: absolute;
 	right: 30%;
-    bottom: 35%;
+    bottom: 29%;
 	opacity: 0.2;
 }
 
@@ -124,7 +129,7 @@ a {
     color: rgb(112, 214, 106, 1);
     width: 70px;
     height: 30px;
-    font-family: Inter;
+    /*font-family: Inter;*/
     font-size: 25px;
     text-align: center;
 }

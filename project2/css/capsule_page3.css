@@ -21,8 +21,8 @@ a {
 .text-1 {
 	color: rgba(178, 255, 250, 1);
 	position: absolute;
-	right: -0.5rem;
-	bottom: 6.4rem;
+	right: -1.5rem;
+	bottom: 5.9rem;
 	/*font-family: Inter;*/
 	text-align: left;
 	font-size: 14rem;
@@ -32,8 +32,8 @@ a {
 .text-2 {
 	color: rgba(178, 255, 250, 1);
 	position: absolute;
-	right: -0.5rem;
-	bottom: -3rem;
+	right: -2.2rem;
+	bottom: -2.4rem;
 	/*font-family: Inter;*/
 	text-align: left;
 	font-size: 14rem;
